@@ -1,0 +1,87 @@
+.stepper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.stepper .stepper__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  position: relative;
+}
+.stepper .stepper__wrapper .stepper__line {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 25%;
+  margin: 0 1.5rem;
+  width: 50%;
+  height: 2px;
+  background-color: #D7D7D7;
+  z-index: -1;
+}
+.stepper .stepper__wrapper .stepper__line._1 {
+  left: 0;
+}
+.stepper .stepper__wrapper .stepper__line._2 {
+  right: 0;
+}
+.stepper .stepper__wrapper > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.stepper .stepper__wrapper > div .step__title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #D7D7D7;
+}
+.stepper .stepper__wrapper .step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 1rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.stepper .stepper__wrapper .step.active {
+  background-color: #333;
+  color: #fff;
+}
+.stepper .stepper__wrapper .step:not(.active) {
+  border: 2px solid #D7D7D7;
+  color: #D7D7D7;
+}
+
+.details input[type=text] {
+  max-width: 600px;
+  width: 100%;
+  border-radius: 12px;
+  border: 1px solid #d7d7d7;
+  outline: none;
+  padding: 0.5rem 1rem;
+}
+.details .form-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+.details .form-wrapper > div {
+  margin-top: 2rem;
+}
+
+.payment, .finish {
+  display: none;
+}
+
+#display-data {
+  max-width: 400px;
+  margin: 1rem auto 0;
+}/*# sourceMappingURL=reservation.css.map */

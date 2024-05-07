@@ -1,0 +1,65 @@
+:root {
+    --color-primary: #1E1E1E;
+    --color-secondary: #7D7D7D;
+    --text-48: 48px;
+    --text-40: 40px;
+    --text-32: 32px;
+    --text-24: 24px;
+    --text-20: 20px;
+}
+
+html, body {
+    font-family: "Prompt", sans-serif;
+}
+
+.bg-custom {
+    background-color: var(--color-primary);
+}
+
+
+.text-48 {
+    font-size: clamp(2rem, 5vw, var(--text-48));
+}
+
+.text-40 {
+    font-size: clamp(2rem, 5vw, var(--text-40));
+}
+
+.text-32 {
+    font-size: clamp(1rem, 5vw, var(--text-32));
+}
+
+.text-24 {
+    font-size: var(--text-24);
+}
+
+.text-20 {
+    font-size: var(--text-20);
+}
+
+.text-secondary {
+    color: var(--color-secondary);
+}
+
+.py-88 {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.pb-40 {
+    padding-bottom: 40px;
+}
+
+.py-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+img {
+    max-width: 100%;
+}

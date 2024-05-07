@@ -1,0 +1,28 @@
+$primary: #1E1E1E;
+
+.header {
+    background-color: $primary;
+    height: 100px;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        height: 40px;
+    }
+
+    h1 {
+        font-size: 32px;
+        font-weight: 600;
+    }
+}
+
+
+.hero {
+    height: 342px;
+    background-image: url('../images/bg.png');
+    background-color: $primary;
+}
+

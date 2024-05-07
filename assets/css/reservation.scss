@@ -1,0 +1,108 @@
+
+.stepper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+
+
+    .stepper__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2rem;
+        position: relative;
+
+        .stepper__line {
+            position: absolute;
+            transform: translateY(-50%);
+            top: 25%;
+            margin: 0 1.5rem;
+            width: 50%;
+            height: 2px;
+            background-color: #D7D7D7;
+            z-index: -1;
+
+
+
+            &._1 {
+                left: 0;
+            }
+
+            &._2 {
+                right: 0;
+            }
+            
+        }
+
+            & > div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+               
+                .step__title {
+                    font-size: 1.2rem;
+                    font-weight: 600;
+                    margin-top: 1rem;
+                    color: #D7D7D7;
+                }
+            }
+        
+            .step {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background-color: #fff;
+                font-size: 1.2rem;
+                font-weight: 600;
+                margin: 0 1rem;
+                cursor: pointer;
+                transition: all 0.3s;
+        
+                &.active {
+                    background-color: #333;
+                    color: #fff;
+                }
+
+                &:not(.active) {
+                    border: 2px solid #D7D7D7;
+                    color: #D7D7D7;
+                }
+            }
+    }
+}
+
+
+.details {
+
+    input[type="text"] {
+        max-width: 600px;
+        width: 100%;
+        border-radius: 12px;
+        border: 1px solid #d7d7d7;
+        outline: none;
+        padding: 0.5rem 1rem;
+    }
+
+    .form-wrapper {
+        max-width: 600px;
+        margin: 0 auto;
+
+        & > div {
+            margin-top: 2rem;
+        }
+    }
+}
+
+.payment, .finish {
+    display: none;
+}
+
+#display-data {
+    max-width: 400px;
+    margin: 1rem auto 0;
+}
