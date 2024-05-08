@@ -15,6 +15,14 @@
   font-weight: 600;
 }
 
+@media  screen and (max-width: 758px) {
+  .header h1 {
+
+    display: none;
+  }
+  
+}
+
 .header .btn__hamburger {
   background: none;
   border: none;
